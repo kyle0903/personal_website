@@ -1,0 +1,5 @@
+/backend/build
+/web/build
+/backend/__pycache__
+/web/node_modules
+/web/build

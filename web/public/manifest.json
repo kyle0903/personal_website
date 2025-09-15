@@ -1,0 +1,65 @@
+{
+  "short_name": "Kyle's Portfolio",
+  "name": "Kyle's Personal Portfolio Website",
+  "description": "後端工程師 Kyle 的個人作品集網站，展示專業技能與專案經驗",
+  "icons": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1976d2",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "zh-TW",
+  "dir": "ltr",
+  "scope": "/",
+  "id": "kyle-portfolio",
+  "shortcuts": [
+    {
+      "name": "專案作品",
+      "short_name": "專案",
+      "description": "查看我的專案作品集",
+      "url": "/projects",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "關於我",
+      "short_name": "關於",
+      "description": "了解我的專業背景",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "聯絡我",
+      "short_name": "聯絡",
+      "description": "與我取得聯繫",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "logo192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
