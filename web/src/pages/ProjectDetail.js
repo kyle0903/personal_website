@@ -205,7 +205,7 @@ const ProjectDetail = () => {
                 <Card sx={{ mb: 4, overflow: "hidden" }}>
                   <CardMedia
                     component="img"
-                    image={`http://localhost:8000${project.image_url}`}
+                    image={`https://backend-729408356870.asia-east1.run.app/${project.image_url}`}
                     alt={project.name}
                     sx={{
                       height: { xs: 250, md: 400 },

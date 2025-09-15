@@ -54,7 +54,7 @@ const About = () => {
       <Fade in timeout={800}>
         <Box sx={{ textAlign: "center", mb: 8 }}>
           <Avatar
-            src="http://localhost:8000/api/static/images/profile.jpg"
+            src="https://backend-729408356870.asia-east1.run.app//api/static/images/profile.jpg"
             sx={{
               width: 150,
               height: 150,

@@ -194,7 +194,7 @@ const Projects = () => {
                 <CardMedia
                   component="img"
                   height="220"
-                  image={`http://localhost:8000${project.image_url}`}
+                  image={`https://backend-729408356870.asia-east1.run.app/${project.image_url}`}
                   alt={project.name}
                   className="project-image"
                   sx={{

@@ -147,7 +147,7 @@ const Home = () => {
                 }}
               >
                 <Avatar
-                  src="http://localhost:8000/api/static/images/profile.jpg"
+                  src="https://backend-729408356870.asia-east1.run.app//api/static/images/profile.jpg"
                   sx={{
                     width: { xs: 200, md: 280 },
                     height: { xs: 200, md: 280 },
@@ -340,7 +340,7 @@ const Home = () => {
                   <CardMedia
                     component="img"
                     height="200"
-                    image={`http://localhost:8000${project.image_url}`}
+                    image={`https://backend-729408356870.asia-east1.run.app/${project.image_url}`}
                     alt={project.name}
                     sx={{
                       height: "300px",
