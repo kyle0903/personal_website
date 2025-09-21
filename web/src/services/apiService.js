@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://backend-729408356870.asia-east1.run.app/";
+const API_BASE_URL = "https://kyle-profile-729408356870.asia-east1.run.app/";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
@@ -8,6 +8,9 @@ const api = axios.create({
     "Content-Type": "application/json",
   },
 });
+
+// 匯出 API 基礎 URL 供其他元件使用
+export { API_BASE_URL };
 
 // 請求攔截器
 api.interceptors.request.use(

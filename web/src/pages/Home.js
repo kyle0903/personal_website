@@ -18,7 +18,7 @@ import {
   GitHub as GitHubIcon,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import { apiService } from "../services/apiService";
+import { apiService, API_BASE_URL } from "../services/apiService";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const Home = () => {
@@ -147,7 +147,7 @@ const Home = () => {
                 }}
               >
                 <Avatar
-                  src="https://backend-729408356870.asia-east1.run.app//api/static/images/profile.jpg"
+                  src={`${API_BASE_URL}api/static/images/profile.jpg`}
                   sx={{
                     width: { xs: 200, md: 280 },
                     height: { xs: 200, md: 280 },
@@ -340,7 +340,7 @@ const Home = () => {
                   <CardMedia
                     component="img"
                     height="200"
-                    image={`https://backend-729408356870.asia-east1.run.app/${project.image_url}`}
+                    image={`${API_BASE_URL}${project.image_url}`}
                     alt={project.name}
                     sx={{
                       height: "300px",

@@ -11,6 +11,7 @@ app = FastAPI(title="Kyle's Personal Website API", version="1.0.0")
 # CORS 設定
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=["*"],  # 允許所有來源，生產環境建議指定具體域名
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

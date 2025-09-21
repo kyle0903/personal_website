@@ -28,7 +28,7 @@ import {
   Category as CategoryIcon,
 } from "@mui/icons-material";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { apiService } from "../services/apiService";
+import { apiService, API_BASE_URL } from "../services/apiService";
 
 const ProjectDetail = () => {
   const theme = useTheme();
@@ -205,7 +205,7 @@ const ProjectDetail = () => {
                 <Card sx={{ mb: 4, overflow: "hidden" }}>
                   <CardMedia
                     component="img"
-                    image={`https://backend-729408356870.asia-east1.run.app/${project.image_url}`}
+                    image={`${API_BASE_URL}${project.image_url}`}
                     alt={project.name}
                     sx={{
                       height: { xs: 250, md: 400 },

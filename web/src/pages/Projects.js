@@ -19,7 +19,7 @@ import {
   FilterList as FilterIcon,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
-import { apiService } from "../services/apiService";
+import { apiService, API_BASE_URL } from "../services/apiService";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const Projects = () => {
@@ -194,7 +194,7 @@ const Projects = () => {
                 <CardMedia
                   component="img"
                   height="220"
-                  image={`https://backend-729408356870.asia-east1.run.app/${project.image_url}`}
+                  image={`${API_BASE_URL}${project.image_url}`}
                   alt={project.name}
                   className="project-image"
                   sx={{
