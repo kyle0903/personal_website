@@ -145,7 +145,7 @@ PROJECTS_DATA = [
 ABOUT_DATA = {
     "name": "Kyle",
     "title": "富萊特國際股份有限公司 - 後端工程師",
-    "description": "我是目前已在海空運承攬公司擔任兩年的後端工程師，主要是以Python (Flask / FastAPI) 作為開發，擅長 RESTful API 設計、資料處理與系統整合，熟悉 PostgreSQL、MongoDB 的資料庫查詢與建立，並具備 Docker 環境建置。在國際物流與報關系統專案中，累積了許多建置多項 API 串接，與協助內外部系統的資料整合的實務經驗。\n\n此外，我曾在碩士階段專注於研究演算法穩定幣與 DeFi 機制，並在以太坊虛擬網路上以 Node.js 與 Solidity 實作發幣與兌換功能。這些經驗讓我能將後端開發專業與不同領域的應用結合，並快速投入相關專案開發。",
+    "description": "目前於海空運承攬公司擔任後端工程師，具有兩年的Python (Flask / FastAPI) 網頁後端開發經驗，擅長 RESTful API 設計、資料處理與系統整合，熟悉PostgreSQL、MongoDB 的資料庫查詢與建立，並支援團隊 Docker環境建置與CI/CD 部署流程 。在國際物流與報關系統專案中，累積了許多API 串接建置，與協助內外部系統資料整合的實務經驗。\n\n此外，我曾在碩士階段以Node.js(Express.js)與MySQL開發個人的部落格與電商平台。透過這些經驗讓我能將後端技能與不同領域的應用結合，並快速投入相關專案開發。",
     "skills": [
         "Python", "Flask", "FastAPI", "RESTful API", "PostgreSQL", "MongoDB",
         "Node.js", "Express.js", "Pytest", "MySQL", "JavaScript", "HTML", "CSS",

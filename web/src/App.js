@@ -32,7 +32,7 @@ const theme = createTheme({
       dark: "#424242",
     },
     background: {
-      default: "#d5cdcb",
+      default: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
       paper: "#ffffff",
     },
     text: {
@@ -182,7 +182,7 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          background: "#d5cdcb",
+          background: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
           borderBottom: "1px solid #e0e0e0",
           boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
         },

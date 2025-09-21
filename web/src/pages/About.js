@@ -17,7 +17,7 @@ import {
   School as SchoolIcon,
   Work as WorkIcon,
 } from "@mui/icons-material";
-import { apiService } from "../services/apiService";
+import { apiService, API_BASE_URL } from "../services/apiService";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const About = () => {
@@ -54,7 +54,7 @@ const About = () => {
       <Fade in timeout={800}>
         <Box sx={{ textAlign: "center", mb: 8 }}>
           <Avatar
-            src="https://backend-729408356870.asia-east1.run.app//api/static/images/profile.jpg"
+            src={`${API_BASE_URL}api/static/images/profile.jpg`}
             sx={{
               width: 150,
               height: 150,
@@ -71,14 +71,14 @@ const About = () => {
             component="h1"
             sx={{ mb: 2, fontWeight: 600 }}
           >
-            關於 {aboutInfo?.name || "User"}
+            關於 {aboutInfo?.name || "讀取中..."}
           </Typography>
           <Typography
             variant="h5"
             color="primary"
             sx={{ mb: 3, fontWeight: 500 }}
           >
-            {aboutInfo?.title || "全端開發工程師"}
+            {aboutInfo?.title || "讀取中..."}
           </Typography>
           <Typography
             variant="h6"
@@ -94,7 +94,7 @@ const About = () => {
             }}
           >
             {aboutInfo?.description ||
-              "熱愛技術的全端開發者，專精於現代化技術棧。"}
+              "讀取中..."}
           </Typography>
         </Box>
       </Fade>

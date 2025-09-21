@@ -21,8 +21,9 @@ import {
   Phone as PhoneIcon,
   Schedule as ScheduleIcon,
   Send as SendIcon,
+  Code as CodeIcon,
 } from "@mui/icons-material";
-import { apiService } from "../services/apiService";
+import { apiService, API_BASE_URL } from "../services/apiService";
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const Contact = () => {
@@ -121,6 +122,7 @@ const Contact = () => {
             有專案合作想法？歡迎隨時聯絡我！
           </Typography>
           <Avatar
+            src={`${API_BASE_URL}api/static/images/profile.jpg`}
             sx={{
               width: 120,
               height: 120,
@@ -130,13 +132,13 @@ const Contact = () => {
               mb: 2,
             }}
           >
-            {aboutInfo?.name?.charAt(0) || "K"}
+            <CodeIcon sx={{ fontSize: "inherit" }} />
           </Avatar>
           <Typography variant="h5" fontWeight={500}>
-            {aboutInfo?.name || "Kyle"}
+            {aboutInfo?.name || "讀取中..."}
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            {aboutInfo?.title || "全端開發工程師"}
+            {aboutInfo?.title || "讀取中..."}
           </Typography>
         </Box>
       </Fade>
@@ -320,7 +322,7 @@ const Contact = () => {
               onClick={() =>
                 window.open(
                   `mailto:${
-                    aboutInfo?.contact?.email || "nswer_kyle@portonmail.com"
+                    aboutInfo?.contact?.email || "讀取中..."
                   }`,
                   "_self"
                 )

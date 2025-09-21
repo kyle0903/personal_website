@@ -131,21 +131,20 @@ const Navbar = () => {
       <HideOnScroll>
         <AppBar
           position="fixed"
+          enableColorOnDark={false}
           sx={{
-            bgcolor: "background.default",
-            boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)",
-            borderBottom: 1,
-            borderColor: "divider",
+            background: "linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%)",
+            boxShadow: "none",
+            borderBottom: "none",
           }}
         >
-          <Toolbar>
+          <Toolbar sx={{ minHeight: { xs: 56, md: 64 } }}>
             <Box
               component={Link}
               to="/"
               sx={{
                 display: "flex",
                 alignItems: "center",
-                gap: 1,
                 textDecoration: "none",
                 color: "inherit",
                 flexGrow: { xs: 1, md: 0 },
